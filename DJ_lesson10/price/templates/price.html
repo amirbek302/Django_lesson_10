@@ -20,7 +20,7 @@
             <p>Марка: {{ car.car_make }}</p>
 
             {% if car.car_image %}
-                <img src="{{ car.car_image }}" width="250">
+                <img src="{{ car.car_image }}" width="300" alt="{{ car.car_make }} {{ car.car_model }}">
             {% endif %}
         </div>
         <hr>
