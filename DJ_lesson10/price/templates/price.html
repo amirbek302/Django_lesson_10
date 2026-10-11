@@ -11,5 +11,21 @@
 </head>
 <body>
     <h2>Hello it's Price</h2>
+    <h1>Список автомобилей:</h1>
+
+    {% for car in cars %}
+        <div class="car_card">
+            <h2>{{ car.car_model }}</h2>
+            <p>Описание: {{ car.car_description }}</p>
+            <p>Марка: {{ car.car_make }}</p>
+
+            {% if car.car_image %}
+                <img src="{{ car.car_image }}" width="250">
+            {% endif %}
+        </div>
+        <hr>
+    {% empty %}
+        <p>Пока автомобилей нет.</p>
+    {% endfor %}
 </body>
 </html>
