@@ -1,9 +1,179 @@
-body{
-    background-color: #818181;
-    font-family: sans-serif;
+/* -------------------------------------------------------------
+------------------------------------------------------------- */
+:root, [data-theme="light"] {
+  --bg-body: #f4f7f6;
+  --bg-card: #ffffff;
+  --text-main: #2b2d42;
+  --text-muted: #6c757d;
+  --accent: #3a86c8;
+  --border: #e2e8f0;
 }
 
-a{
+[data-theme="dark"] {
+  --bg-body: #121214;
+  --bg-card: #1a1a1e;
+  --text-main: #f8f9fa;
+  --text-muted: #adb5bd;
+  --accent: #4ea8de;
+  --border: #2d3748;
+}
+
+[data-theme="cyberpunk"] {
+  --bg-body: #001219;
+  --bg-card: #005f73;
+  --text-main: #ca6702;
+  --text-muted: #e9d8a6;
+  --accent: #94d2bd;
+  --border: #ae2012;
+}
+
+/* -------------------------------------------------------------
+------------------------------------------------------------- */
+body {
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  font-family: system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0 5%;
+}
+
+a {
+    color: var(--accent);
     text-decoration: none;
-    color: #fff;
+}
+
+a:hover {
+    color: var(--text-main);
+    opacity: 0.7;
+}
+
+/* Навигация */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 35px;
+    gap: 20px;
+}
+
+/* Ссылки меню */
+.nav-a {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: nowrap;
+}
+
+/* Переключатели справа */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.nav-buttons form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+/* Для небольших экранов */
+@media (max-width: 750px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 12px 18px;
+    }
+
+    .nav-a {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-buttons {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.language-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.language-select {
+    background-color: var(--bg-card);
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.language-select:hover {
+    border-color: var(--accent);
+}
+
+.language-select:focus {
+    border-color: var(--accent);
+}
+
+.language-btn {
+    background-color: var(--accent);
+    color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.language-btn:hover {
+    opacity: 0.85;
+}
+
+.language-btn:active {
+    transform: scale(0.95);
+}
+
+.theme-picker select {
+    background-color: var(--bg-card);
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.car_card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.car_card h1 {
+    margin-top: 0;
+}
+
+.car_card p {
+    color: var(--text-muted);
 }
