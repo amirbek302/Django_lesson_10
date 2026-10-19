@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 15:11+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\price\templates\price.html:39
+msgid "List of cars"
+msgstr "Avtomobillar ro‘yxati"
+
+#: .\price\templates\price.html:44
+msgid "Description"
+msgstr "Tavsifnoma"
+
+#: .\price\templates\price.html:45
+msgid "Brand"
+msgstr "Brend"
+
+#: .\price\templates\price.html:52
+msgid "There are no vehicles yet"
+msgstr "Hali transport vositalari yo‘q"
+
+
+#: .\price\templates\price.html:45
+msgid "Recent morning ball find."
+msgstr "Yaqinda topilgan to‘p."
+
+msgid "Girl Mr hundred white term character."
+msgstr "Qiz, janob, yuz, oq, atama, xarakter."
+
+msgid "True ready interest serious mouth majority."
+msgstr "Haqiqiy, tayyor, qiziqish, jiddiy, og‘iz, ko‘pchilik."
+
+msgid "Difference get market building another."
+msgstr "Bozorga yana bir bino qurishdagi farq."
