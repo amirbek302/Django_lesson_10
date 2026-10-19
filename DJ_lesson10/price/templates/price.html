@@ -36,21 +36,20 @@
             </div>
         </div>
     </nav>
-    <h1>List of cars:</h1>
-
+    <h1>{% translate "List of cars" %}:</h1>
     <main>
         {% for car in cars %}
         <div class="car_card">
             <h2>{{ car.car_model }}</h2>
-            <p>Description: {{ car.car_description }}</p>
-            <p>Brand: {{ car.car_make }}</p>
+            <p>{% translate "Description" %}: {% translate car.car_description %}</p>
+            <p>{% translate "Brand" %}: {{ car.car_make }}</p>
 
             {% if car.car_image %}
                 <img src="{{ car.car_image }}" width="300" alt="{{ car.car_make }} {{ car.car_model }}">
             {% endif %}
         </div>
     {% empty %}
-        <p>There are no vehicles yet.</p>
+        <p>{% translate "There are no vehicles yet" %}.</p>
     {% endfor %}
     </main>
 <!--  JavaScript   -->
